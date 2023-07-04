@@ -9,8 +9,8 @@ Bem-vindo ao **Mundo a Fora**! Aqui você vai descobrir os melhores destinos e e
 Nossa plataforma oferece uma variedade de recursos para garantir que sua experiência seja completa:
 
 - 🎉 **Feriados**: Descubra os melhores momentos para viajar e aproveitar os feriados em cada destino.
-- 📸 **Pontos Turísticos**: Explore os pontos turísticos mais incríveis, desde monumentos famosos até joias escondidas.
-- 🍽️ **Culinária**: Conheça a gastronomia local e saboreie pratos deliciosos que cada cidade tem a oferecer.
+- 📸 **Pontos Turísticos**: Explore os pontos turísticos mais incríveis, desde monumentos famosos até cachoeiras.
+- 🍽️ **Culinária**: Conheça a gastronomia local e saboreie pratos deliciosos que a cidade tem a oferecer.
 - 🏨 **Hospedagens**: Encontre as melhores opções de hospedagem, desde hotéis luxuosos até aconchegantes pousadas.
 
 ## Documentação Técnica
