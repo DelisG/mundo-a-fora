@@ -1,1 +1,0 @@
-# :books: Mundo A Fora
