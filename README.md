@@ -89,8 +89,6 @@ Agradecemos antecipadamente suas contribuições para tornar o Projeto mundo-a-f
 Se você tiver alguma dúvida ou precisar de mais informações, sinta-se à vontade para entrar em contato:
 
 - E-mail: delisgmarques@gmail.com
-- Twitter: [delisssz](https://twitter.com/seu-delisssz)
-```
 
 ### Técnicas Complementares
 
