@@ -37,7 +37,7 @@ git clone https://github.com/DelisG/mundo-a-fora.git
 2. Clone o seu fork para o seu ambiente local. Abra o terminal e execute o seguinte comando:
 
    ```
-   git clone https://github.com/SEU_USUARIO/projeto-xyz.git
+   git clone https://github.com/SEU_USUARIO/mundo-a-fora.git
    ```
 
    Substitua `Delisg` pelo seu nome de usuário do GitHub.
