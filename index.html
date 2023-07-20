@@ -29,26 +29,40 @@
     </head>
 
     <body class="bg-light">
-
         <!-- CABEÇALHO  -->
         <header>
-            <nav class="navbar navbar-expand-lg">
-                <a href="index.html"><img src="img/logo-perfil-icon.png"
-                        alt="logo" width="70px"></a>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-item nav-link"
-                            href="culinaria.html">CULINÁRIA</a>
-                        <a class="nav-item nav-link"
-                            href="feriados.html">FERIADOS</a>
-                        <a class="nav-item nav-link"
-                            href="hospedagem.html">HOSPEDAGEM</a>
-                        <a class="nav-item nav-link"
-                            href="tour.html">TURISMO E ATRAÇÕES</a>
-
-                    </div>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                  <a href="index.html"><img src="img/logo-perfil-icon.png" alt="logo" width="70px"></a> <button
+                    class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- --------- -->
+            
+                    <a class="nav-item nav-link" href="culinaria.html"></a>
+                    <a class="nav-item nav-link" href="feriados.html"></a>
+                    <a class="nav-item nav-link" href="hospedagem.html"></a>
+                    <a class="nav-item nav-link" href="tour.html"></a>
+                    <!-- --------- -->
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="culinaria.html">CULINÁRIA</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="feriados.html">FERIADOS</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="hospedagem.html">HOSPEDAGEM</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="tour.html">TURISMO E ATRAÇÕES</a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-            </nav>
+              </nav>
         </header>
         <!-- CORPO DO SITE --> <br>
         <main>
@@ -67,34 +81,26 @@
 
             </div>
             <!-- COMO CHEGAR + MAPA --> <br>
-            <div class="row">
-                <div class="col-1"> </div>
-                <div class="col-5 d-flex justify-content-center">
-                    <div class="my-div card ">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63185.849783155085!2d-35.60376543831399!3d-8.191107570905928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7aa4820180cfe83%3A0xbb9e178bc01d927!2zR3JhdmF0w6EsIFBF!5e0!3m2!1spt-BR!2sbr!4v1685727056402!5m2!1spt-BR!2sbr"
-                            width="600rem" height="402rem" style="border:0;"
-                            allowfullscreen loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
+            <div class="container">
+                <div class="row">
+                  <div class="col-md-6 card ">
+                    <h1 class="text-center">Como chegar?</h1> <br>
+            
+                    <p style="font-size: 30px;" class="text-center">Gravatá
+                      fica localizado
+                      a 50km de Caruaru e a 82km de recife. Seu
+                      acesso pode ser realizado a partir da capital
+                      Pernambucana, em uma viagem de carro com duração
+                      de 1h10 pela via BR-232.</p>
+                  </div>
+                  <div class="col-md-6 card ">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63185.849783155085!2d-35.60376543831399!3d-8.191107570905928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7aa4820180cfe83%3A0xbb9e178bc01d927!2zR3JhdmF0w6EsIFBF!5e0!3m2!1spt-BR!2sbr!4v1685727056402!5m2!1spt-BR!2sbr"
+                      width="100%" height="100%" style="border:0;" allowfullscreen loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
                 </div>
-                <div class="col-5 card">
-                    <div class>
-                        <div class="card-body">
-                            <h1 class="text-center">Como chegar?</h1> <br>
-
-                            <p style="font-size: 30px;" class="text-center">Gravatá
-                                fica localizado
-                                a 50km de Caruaru e a 82km de recife. Seu
-                                acesso pode ser realizado a partir da capital
-                                Pernambucana, em uma viagem de carro com duração
-                                de 1h10 pela via BR-232.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-1"> </div>
-            </div>
+              </div>
             <!-- VIDEO -->
             <div class="d-flex justify-content-center">
                 <div class="my-div ">
