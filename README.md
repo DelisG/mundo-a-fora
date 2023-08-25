@@ -1,6 +1,7 @@
 # Mundo a Fora 🌍✈️🏝️
+[:clapper: Ver Projeto no Browser](https://delisg.github.io/mundo-a-fora/) <br>
 
-[![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)](https://github.com/seu-usuario/mundo-a-fora)
+[![Status](https://img.shields.io/badge/status-Em%20Desenvolvimento-yellow)](https://github.com/seu-usuario/mundo-a-fora)
 
 Bem-vindo ao **Mundo a Fora**! Aqui você vai descobrir os melhores destinos e experiências pelo mundo, começando por nossa cidade em destaque: **Gravatá**. E não para por aí, estamos constantemente adicionando novas cidades para você explorar.
 
