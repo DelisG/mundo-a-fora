@@ -1,525 +1,476 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Mundo A fora</title>
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
-            crossorigin="anonymous">
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-            crossorigin="anonymous"></script>
-        <link rel="icon" type="img"
-            href="img/logo-perfil-icon.png">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo A fora</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <link rel="icon" type="img" href="img/logo-perfil-icon.png">
 
-        <script>
+    <script>
         function enviarFormulario() {
-            var nome = document.getElementById("nome").value;
-            var mail = document.getElementById("mail").value;
+            let nome = document.getElementById("nome").value;
+            let mail = document.getElementById("mail").value;
             mensagem = (`Tudo certo, ${nome}, seu E-mail ${mail}, foi cadastrado com sucesso!`);
             document.getElementById("enviado").innerHTML = mensagem;
         }
     </script>
 
-    </head>
+</head>
 
-    <body class="bg-light overflow-x-hidden">
-        <!-- CABEÇALHO  -->
-        <header>
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid">
-                    <a href="index.html"><img src="img/logo-perfil-icon.png"
-                            alt="logo" width="70px"></a> <button
-                        class="navbar-toggler" type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse"
-                        id="navbarSupportedContent">
-                        <!-- --------- -->
+<body class="bg-light overflow-x-hidden">
+    <!-- CABEÇALHO  -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a href="index.html"><img src="img/logo-perfil-icon.png" alt="logo" width="70px"></a> <button
+                    class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- --------- -->
 
-                        <a class="nav-item nav-link" href="culinaria.html"></a>
-                        <a class="nav-item nav-link" href="feriados.html"></a>
-                        <a class="nav-item nav-link" href="hospedagem.html"></a>
-                        <a class="nav-item nav-link" href="tour.html"></a>
-                        <!-- --------- -->
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page"
-                                    href="culinaria.html">CULINÁRIA</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page"
-                                    href="feriados.html">FERIADOS</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page"
-                                    href="hospedagem.html">HOSPEDAGEM</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page"
-                                    href="tour.html">TURISMO E ATRAÇÕES</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </header>
-        <!-- CORPO DO SITE -->
-        <main>
-            <div class="container">
-                <div>
-
-                    <p style="font-size: 55px;" class="text-center">Gravatá:
-                        Tudo sobre a Suiça Pernambucana</p>
-                    <p class="text-center">Gravatá é
-                        destino para o ano inteiro, com atividades para
-                        as épocas de sol e de chuva. Além dos eventos que
-                        acontecem ao longo dos 12 meses e encantam as multidões
-                        de munícipes e visitantes que vêm para cá, se hospedam
-                        em hotéis ou em casas e flats de temporada e movimentam
-                        a economia da cidade.</p>
-                </div>
-
-            </div>
-            <!-- COMO CHEGAR + MAPA -->
-            <div class="container">
-                <div class="row gap-2">
-                    <div class="col card p-4">
-                        <h1 class="text-center">Como chegar?</h1>
-
-                        <p class="text-center px-5 fs-5">Gravatá
-                            fica localizado a 50km de Caruaru e a 82km de
-                            recife. Seu acesso pode ser realizado a partir da
-                            capital
-                            Pernambucana, em uma viagem de carro com duração
-                            de 1h10 pela via BR-232.</p>
-                    </div>
-                    <div class="col-md-6">
-                        <iframe class="card w-100 h-100"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63185.849783155085!2d-35.60376543831399!3d-8.191107570905928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7aa4820180cfe83%3A0xbb9e178bc01d927!2zR3JhdmF0w6EsIFBF!5e0!3m2!1spt-BR!2sbr!4v1685727056402!5m2!1spt-BR!2sbr"
-                            allowfullscreen loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
+                    <a class="nav-item nav-link" href="culinaria.html"></a>
+                    <a class="nav-item nav-link" href="feriados.html"></a>
+                    <a class="nav-item nav-link" href="hospedagem.html"></a>
+                    <a class="nav-item nav-link" href="tour.html"></a>
+                    <!-- --------- -->
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="culinaria.html">CULINÁRIA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="feriados.html">FERIADOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="hospedagem.html">HOSPEDAGEM</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="tour.html">TURISMO E ATRAÇÕES</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <!-- Vídeo -->
-            <div class="container vh-100">
-                <h1 class="text-center p-5">Conhecendo a Cidade e suas Origens
-                </h1>
-                <iframe class="w-100 h-75"
-                    src="https://www.youtube.com/embed/7olAHySvIJ4"
-                    title="CONHEÇA GRAVATÁ EM PERNAMBUCO A CAPITAL DO TURISMO AQUI NO Cidades &amp; Cia"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
+        </nav>
+    </header>
+    <!-- CORPO DO SITE -->
+    <main>
+        <div class="container">
+            <div>
+
+                <p style="font-size: 55px;" class="text-center">Gravatá:
+                    Tudo sobre a Suiça Pernambucana</p>
+                <p class="text-center">Gravatá é
+                    destino para o ano inteiro, com atividades para
+                    as épocas de sol e de chuva. Além dos eventos que
+                    acontecem ao longo dos 12 meses e encantam as multidões
+                    de munícipes e visitantes que vêm para cá, se hospedam
+                    em hotéis ou em casas e flats de temporada e movimentam
+                    a economia da cidade.</p>
             </div>
 
-            <!-- historia da cidade -->
-            <div class="container">
-                <div class>
-                    <h2 class="text-center">Historia da cidade</h2>
-                    <p class="text-center">O município de Gravatá teve
-                        origens numa fazenda, em
-                        1808, pertencente a José Justino Carreiro de
-                        Miranda,
-                        local esse que servia como hospedagem para os
-                        viajantes que iam comercializar o açúcar e a carne
-                        bovina,
-                        principais produtos da época, que eram levados em
-                        embarcações do Recife até o interior. Como a
-                        navegação
-                        pelo rio Ipojuca era difícil, os comerciantes eram
-                        obrigados a fazer paradas estratégicas para
-                        evitar também
-                        que o gado perdesse peso.
+        </div>
+        <!-- COMO CHEGAR + MAPA -->
+        <div class="container">
+            <div class="row gap-2">
+                <div class="col card p-4">
+                    <h1 class="text-center">Como chegar?</h1>
 
-                        Uma dessas paradas ficou conhecida como Crauatá,
-                        denominação, que deriva do tupi Karawatã (“mato
-                        que fura”),
-                        por conta da predominância de uma planta do gênero
-                        da família das bromélias, também chamada
-                        caraguatá,
-                        caroatá, caroá e gravatá.
-
-                        Foi nos fins do [século XVIII – 1797 ou princípios
-                        de 1798] que José Justino Carreiro de Miranda
-                        tomou posse
-                        da Fazenda Gravatá que, por muito tempo, serviu de
-                        hospedagem para viajantes e, como
-                        consequência natural,
-                        surgiram dois arruados, um em cada margem do rio.
-
-                        Em 1816 iniciou-se a construção de uma capela
-                        dedicada a Sant’Ana que, em 1822 provavelmente em
-                        26 de Julho,
-                        dedicado pela Igreja Católica a Sant’Ana, seria
-                        concluída por seu filho João Félix Justiniano.
-                        Em seguida,
-                        as terras foram divididas em 100 lotes e vendidas
-                        aos moradores, dando início ao povoado de
-                        Gravatá, sendo
-                        um distrito do município de Bezerros.
-
-                        Finalmente no dia (25 de Maio de 1857), 35 anos de
-                        pois da inauguração da capela, pela Lei
-                        Provincial 422
-                        foi a povoação elevada a Freguezia de Gravatá. Foi o
-                        primeiro vigário encomendado da nova
-                        freguezia o padre
-                        Joaquim da Cunha Cavalcanti, sendo feito o registro
-                        competente no Livro 1 de Casamentos desse
-                        ano. No Termo
-                        de Abertura está o nome do provisor Francisco José
-                        Tavares da Gama e a data de 7 de Setembro de
-                        1857, quando
-                        chegou o padre interino. A inscrição datal da
-                        paróquia foi feita com solenidade no mesmo dia da
-                        chegada do
-                        tonsurado, da fundação efetiva do grande sonho dos
-                        católicos gravataenses. Na ocasião foi levado
-                        a efeito o
-                        primeiro batizado oficial destas terras.Foi do
-                        parvolo José, nascido no mês de julho desse ano e
-                        filho
-                        legítimo de Firmino José e Maria da Conceição. Vinte
-                        dias mais tarde, a 27 do dito mês,
-                        verificava-se o
-                        primeiro casamento, que foi,conforme documento do
-                        ato, realizado “no oratório privado do engenho
-                        “Penon”, e
-                        oficiado pelo padre Francisco Seabra d’Andrade,- com
-                        certeza convidado de outra paroquia – sendo
-                        os noivos
-                        Manuel Tomás da Silva e Inez Francisca Lisboa. Um
-                        dos seus tataranetos dos Cablocos Nordestinos
-                        e
-                        Tupi-Guarani o Sr. Firmino José e de Dona Maria da
-                        Conceição é o Jornalista Carlos Amaro Gomes,
-                        residente na
-                        cidade do Ipojuca/PE e sua família participou da
-                        formação da cidade, no litoral sul de
-                        Pernambuco, na década
-                        de 60.
-
-                        Em 13 de junho de 1884, a sede do município foi
-                        elevada à categoria de cidade (Lei Provincial nº
-                        1.805),
-                        porém sua emancipação política só veio a ocorrer
-                        após a Proclamação da República, pela Lei
-                        Orgânica dos
-                        Município, de 15 de março de 1893, quando a cidade
-                        adquiriu sua autonomia municipal e elegeu o
-                        seu primeiro
-                        prefeito, Antônio Avelino do Rego Barros.
-
-                        No final do século XIX, com a inauguração da
-                        Ferrovia Great Western Railways, ligando o Recife
-                        ao sertão
-                        pernambucano, a cidade tomou considerável impulso e,
-                        aos poucos, foi definida sua vocação para o
-                        turismo,
-                        sobretudo com a construção da BR-232, em 1950, o que
-                        permitiu um melhor acesso, encurtando o
-                        tempo de viagem
-                        e vencendo o desafio da Serra das Russas. Atualmente
-                        comemora a emancipação do município no dia
-                        15 de março.
-                    </p>
+                    <p class="text-center px-5 fs-5">Gravatá
+                        fica localizado a 50km de Caruaru e a 82km de
+                        recife. Seu acesso pode ser realizado a partir da
+                        capital
+                        Pernambucana, em uma viagem de carro com duração
+                        de 1h10 pela via BR-232.</p>
                 </div>
-                <!--4 imagens  -->
+                <div class="col-md-6">
+                    <iframe class="card w-100 h-100"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63185.849783155085!2d-35.60376543831399!3d-8.191107570905928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7aa4820180cfe83%3A0xbb9e178bc01d927!2zR3JhdmF0w6EsIFBF!5e0!3m2!1spt-BR!2sbr!4v1685727056402!5m2!1spt-BR!2sbr"
+                        allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+        <!-- Vídeo -->
+        <div class="container vh-100">
+            <h1 class="text-center p-5">Conhecendo a Cidade e suas Origens
+            </h1>
+            <iframe class="w-100 h-75" src="https://www.youtube.com/embed/7olAHySvIJ4"
+                title="CONHEÇA GRAVATÁ EM PERNAMBUCO A CAPITAL DO TURISMO AQUI NO Cidades &amp; Cia" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+
+        <!-- historia da cidade -->
+        <div class="container">
+            <div class>
+                <h2 class="text-center">Historia da cidade</h2>
+                <p class="text-center">O município de Gravatá teve
+                    origens numa fazenda, em
+                    1808, pertencente a José Justino Carreiro de
+                    Miranda,
+                    local esse que servia como hospedagem para os
+                    viajantes que iam comercializar o açúcar e a carne
+                    bovina,
+                    principais produtos da época, que eram levados em
+                    embarcações do Recife até o interior. Como a
+                    navegação
+                    pelo rio Ipojuca era difícil, os comerciantes eram
+                    obrigados a fazer paradas estratégicas para
+                    evitar também
+                    que o gado perdesse peso.
+
+                    Uma dessas paradas ficou conhecida como Crauatá,
+                    denominação, que deriva do tupi Karawatã (“mato
+                    que fura”),
+                    por conta da predominância de uma planta do gênero
+                    da família das bromélias, também chamada
+                    caraguatá,
+                    caroatá, caroá e gravatá.
+
+                    Foi nos fins do [século XVIII – 1797 ou princípios
+                    de 1798] que José Justino Carreiro de Miranda
+                    tomou posse
+                    da Fazenda Gravatá que, por muito tempo, serviu de
+                    hospedagem para viajantes e, como
+                    consequência natural,
+                    surgiram dois arruados, um em cada margem do rio.
+
+                    Em 1816 iniciou-se a construção de uma capela
+                    dedicada a Sant’Ana que, em 1822 provavelmente em
+                    26 de Julho,
+                    dedicado pela Igreja Católica a Sant’Ana, seria
+                    concluída por seu filho João Félix Justiniano.
+                    Em seguida,
+                    as terras foram divididas em 100 lotes e vendidas
+                    aos moradores, dando início ao povoado de
+                    Gravatá, sendo
+                    um distrito do município de Bezerros.
+
+                    Finalmente no dia (25 de Maio de 1857), 35 anos de
+                    pois da inauguração da capela, pela Lei
+                    Provincial 422
+                    foi a povoação elevada a Freguezia de Gravatá. Foi o
+                    primeiro vigário encomendado da nova
+                    freguezia o padre
+                    Joaquim da Cunha Cavalcanti, sendo feito o registro
+                    competente no Livro 1 de Casamentos desse
+                    ano. No Termo
+                    de Abertura está o nome do provisor Francisco José
+                    Taletes da Gama e a data de 7 de Setembro de
+                    1857, quando
+                    chegou o padre interino. A inscrição datal da
+                    paróquia foi feita com solenidade no mesmo dia da
+                    chegada do
+                    tonsurado, da fundação efetiva do grande sonho dos
+                    católicos gravataenses. Na ocasião foi levado
+                    a efeito o
+                    primeiro batizado oficial destas terras.Foi do
+                    parvolo José, nascido no mês de julho desse ano e
+                    filho
+                    legítimo de Firmino José e Maria da Conceição. Vinte
+                    dias mais tarde, a 27 do dito mês,
+                    verificava-se o
+                    primeiro casamento, que foi,conforme documento do
+                    ato, realizado “no oratório privado do engenho
+                    “Penon”, e
+                    oficiado pelo padre Francisco Seabra d’Andrade,- com
+                    certeza convidado de outra paroquia – sendo
+                    os noivos
+                    Manuel Tomás da Silva e Inez Francisca Lisboa. Um
+                    dos seus tataranetos dos Cablocos Nordestinos
+                    e
+                    Tupi-Guarani o Sr. Firmino José e de Dona Maria da
+                    Conceição é o Jornalista Carlos Amaro Gomes,
+                    residente na
+                    cidade do Ipojuca/PE e sua família participou da
+                    formação da cidade, no litoral sul de
+                    Pernambuco, na década
+                    de 60.
+
+                    Em 13 de junho de 1884, a sede do município foi
+                    elevada à categoria de cidade (Lei Provincial nº
+                    1.805),
+                    porém sua emancipação política só veio a ocorrer
+                    após a Proclamação da República, pela Lei
+                    Orgânica dos
+                    Município, de 15 de março de 1893, quando a cidade
+                    adquiriu sua autonomia municipal e elegeu o
+                    seu primeiro
+                    prefeito, Antônio Avelino do Rego Barros.
+
+                    No final do século XIX, com a inauguração da
+                    Ferrovia Great Western Railways, ligando o Recife
+                    ao sertão
+                    pernambucano, a cidade tomou considerável impulso e,
+                    aos poucos, foi definida sua vocação para o
+                    turismo,
+                    sobretudo com a construção da BR-232, em 1950, o que
+                    permitiu um melhor acesso, encurtando o
+                    tempo de viagem
+                    e vencendo o desafio da Serra das Russas. Atualmente
+                    comemora a emancipação do município no dia
+                    15 de março.
+                </p>
+            </div>
+            <!--4 imagens  -->
+            <div class="row">
+                <div class="col-sm-6 col-md-3 my-1">
+                    <img class="img-fluid h-100 w-100"
+                        src="https://viajeleve.net/v23/wp-content/uploads/2022/06/O-que-fazer-em-Gravata-PE.jpg">
+                </div>
+                <div class="col-sm-6 col-md-3 my-1">
+                    <img class="img-fluid h-100 w-100"
+                        src="https://www.viajareumprazer.com.br/wp-content/uploads/2020/04/gravata-jazz-festival.jpg">
+                </div>
+                <div class="col-sm-6 col-md-3 my-1">
+                    <img class="img-fluid h-100 w-100"
+                        src="https://www.deolhoemgravata.com.br/wp-content/uploads/2023/05/Letreiro-foto-gilvan-silva.jpg">
+                </div>
+                <div class="col-sm-6 col-md-3 my-1">
+                    <img class="img-fluid h-100 w-100"
+                        src="https://www.viajareumprazer.com.br/wp-content/uploads/2020/04/centro-historico-de-gravata.jpg">
+                </div>
+            </div>
+            <!-- Pontos turisticos -->
+            <div class="row">
+                <h1 class="text-center p-5">Pontos
+                    Turisticos</h1>
+                <div class="col-lg-4 col-md-6 card">
+                    <div class="p-2">
+                        <!-- titulo a baixo -->
+                        <h4 class="text-center">Serra do
+                            Contente</h4>
+                        <!-- imagem a baixo -->
+                        <img class="card-img-top" src="img/4.jpeg" width="300" alt>
+                        <!-- descrição -->
+                        <p>Faça um percurso de 1,5 km em meio à
+                            Mata
+                            Atlântica pela trilha da Serra do
+                            Contente.
+                            O local
+                            é perfeito para a prática de
+                            trekking
+                            moderado. É necessário pagar uma
+                            taxa
+                            para
+                            adentrar a
+                            trilha.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 card">
+                    <div class="p-2">
+                        <h4 class="text-center">Cachoeira da
+                            Palmeira</h4>
+
+                        <!-- imagem a baixo -->
+                        <img class="card-img-top" src="img/2.jpeg" width="300" alt>
+                        <!-- descrição -->
+                        <p>Localizada no sítio homônimo, a
+                            Cachoeira
+                            da Palmeira fica a 17km do centro da
+                            cidade e possui 3 quedas d’água,
+                            bicas e
+                            piscinas
+                            naturais, e conta com restaurantes
+                            bicas, e banheiros proximos.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 card">
+                    <div class="p-2">
+                        <!-- titulo a baixo -->
+                        <h4 class="text-center">Alto do
+                            Cruzeiro</h4>
+
+                        <!-- imagem a baixo -->
+                        <img class="card-img-top" src="img/1.jpeg" width="300" alt>
+                        <!-- descrição -->
+                        <p>O Alto do Cruzeiro fica no centro de
+                            Gravatá, e abriga ainda a Capela do
+                            Cristo Rei e a estátua do Cristo
+                            Redentor. O seu acesso pode ser
+                            feito de
+                            carro ou através de uma escadaria
+                            com
+                            365 degraus.</p>
+                    </div>
+                </div>
+                <a href="tour.html" class="btn d-flex justify-content-end">Ver
+                    mais
+                    Pontos Turisticos </a>
+
+            </div>
+            <!-- HOSPEDAGENS -->
+            <div class="container">
                 <div class="row">
-                    <div class="col-sm-6 col-md-3 my-1">
-                        <img class="img-fluid h-100 w-100"
-                            src="https://viajeleve.net/v23/wp-content/uploads/2022/06/O-que-fazer-em-Gravata-PE.jpg">
-                    </div>
-                    <div class="col-sm-6 col-md-3 my-1">
-                        <img class="img-fluid h-100 w-100"
-                            src="https://www.viajareumprazer.com.br/wp-content/uploads/2020/04/gravata-jazz-festival.jpg">
-                    </div>
-                    <div class="col-sm-6 col-md-3 my-1">
-                        <img class="img-fluid h-100 w-100"
-                            src="https://www.deolhoemgravata.com.br/wp-content/uploads/2023/05/Letreiro-foto-gilvan-silva.jpg">
-                    </div>
-                    <div class="col-sm-6 col-md-3 my-1">
-                        <img class="img-fluid h-100 w-100"
-                            src="https://www.viajareumprazer.com.br/wp-content/uploads/2020/04/centro-historico-de-gravata.jpg">
-                    </div>
-                </div>
-                <!-- Pontos turisticos -->
-                <div class="row">
-                    <h1 class="text-center p-5">Pontos
-                        Turisticos</h1>
-                    <div
-                        class="col-lg-4 col-md-6 card">
+                    <h1 class="col-lg-12 text-center p-5">Hospedagens</h1>
+                    <div class="col-lg-4 col-md-6 card">
                         <div class="p-2">
                             <!-- titulo a baixo -->
-                            <h4 class="text-center">Serra do
-                                Contente</h4>
-                            <!-- imagem a baixo -->
-                            <img class="card-img-top"
-                                src="img/4.jpeg"
-                                width="300" alt>
-                            <!-- descrição -->
-                            <p>Faça um percurso de 1,5 km em meio à
-                                Mata
-                                Atlântica pela trilha da Serra do
-                                Contente.
-                                O local
-                                é perfeito para a prática de
-                                trekking
-                                moderado. É necessário pagar uma
-                                taxa
-                                para
-                                adentrar a
-                                trilha.</p>
-                        </div>
-                    </div>
-                    <div
-                        class="col-lg-4 col-md-6 card">
-                        <div class="p-2">
-                            <h4 class="text-center">Cachoeira da
-                                Palmeira</h4>
+                            <h4 class="text-center">Hotel Porto
+                                Serra</h4>
 
                             <!-- imagem a baixo -->
-                            <img class="card-img-top"
-                                src="img/2.jpeg"
-                                width="300" alt>
+                            <img class="card-img-top" src="img/5.jpg" width="300" alt>
                             <!-- descrição -->
-                            <p>Localizada no sítio homônimo, a
-                                Cachoeira
-                                da Palmeira fica a 17km do centro da
-                                cidade e possui 3 quedas d’água,
-                                bicas e
-                                piscinas
-                                naturais, e conta com restaurantes
-                                bicas, e banheiros proximos.</p>
+                            <p> ótima localização, estacionamento
+                                gratuito, piscina ao ar livre e
+                                banheira
+                                japonesa são
+                                alguns dos principais atrativos do
+                                local.</p>
                         </div>
                     </div>
-                    <div
-                        class="col-lg-4 col-md-6 card">
+                    <div class="col-lg-4 col-md-6 card">
+                        <div class="p-2">
+                            <h4 class="text-center">Oasis Hotel
+                                Spa</h4>
+
+                            <!-- imagem a baixo -->
+                            <img class="card-img-top" src="img/6.jpg" width="300" alt>
+                            <!-- descrição -->
+                            <p>O luxuoso hotel spa oferece
+                                tratamentos
+                                relaxantes como massagem, sauna,
+                                academia,
+                                entre outros atrativos.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 card">
                         <div class="p-2">
                             <!-- titulo a baixo -->
-                            <h4 class="text-center">Alto do
-                                Cruzeiro</h4>
+                            <h4 class="text-center">Portal de
+                                Gravatá</h4>
 
                             <!-- imagem a baixo -->
-                            <img class="card-img-top"
-                                src="img/1.jpeg"
-                                width="300" alt>
+                            <img class="card-img-top" src="img/7.jpg" width="300" alt>
                             <!-- descrição -->
-                            <p>O Alto do Cruzeiro fica no centro de
-                                Gravatá, e abriga ainda a Capela do
-                                Cristo Rei e a estátua do Cristo
-                                Redentor. O seu acesso pode ser
-                                feito de
-                                carro ou através de uma escadaria
-                                com
-                                365 degraus.</p>
+                            <p>Essa hospedagem conta com quartos
+                                climatizados, restaurante
+                                com cardápio regional e ainda
+                                oferece
+                                passeios de escalada e rapel.</p>
                         </div>
                     </div>
-                    <a href="tour.html"
-                        class="btn d-flex justify-content-end">Ver
+                    <a href="hospedagem.html" class="btn d-flex justify-content-end">Ver
                         mais
-                        Pontos Turisticos </a>
-
+                        Hospedagens </a>
                 </div>
-                <!-- HOSPEDAGENS -->
-                <div class="container">
-                    <div class="row">
-                        <h1 class="col-lg-12 text-center p-5">Hospedagens</h1>
-                        <div
-                            class="col-lg-4 col-md-6 card">
-                            <div class="p-2">
-                                <!-- titulo a baixo -->
-                                <h4 class="text-center">Hotel Porto
-                                    Serra</h4>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div>
+                        <div class="row">
+                            <h1 class="text-center p-5">Atrações</h1>
+                            <div class="col-lg-4 col-md-6 card">
+                                <div class="p-2">
+                                    <!-- titulo a baixo -->
+                                    <h4 class="text-center">Centro
+                                        Histórico</h4>
 
-                                <!-- imagem a baixo -->
-                                <img class="card-img-top"
-                                    src="img/5.jpg"
-                                    width="300" alt>
-                                <!-- descrição -->
-                                <p> ótima localização, estacionamento
-                                    gratuito, piscina ao ar livre e
-                                    banheira
-                                    japonesa são
-                                    alguns dos principais atrativos do
-                                    local.</p>
-                            </div>
-                        </div>
-                        <div
-                            class="col-lg-4 col-md-6 card">
-                            <div class="p-2">
-                                <h4 class="text-center">Oasis Hotel
-                                    Spa</h4>
-
-                                <!-- imagem a baixo -->
-                                <img class="card-img-top"
-                                    src="img/6.jpg"
-                                    width="300" alt>
-                                <!-- descrição -->
-                                <p>O luxuoso hotel spa oferece
-                                    tratamentos
-                                    relaxantes como massagem, sauna,
-                                    academia,
-                                    entre outros atrativos.</p>
-                            </div>
-                        </div>
-                        <div
-                            class="col-lg-4 col-md-6 card">
-                            <div class="p-2">
-                                <!-- titulo a baixo -->
-                                <h4 class="text-center">Portal de
-                                    Gravatá</h4>
-
-                                <!-- imagem a baixo -->
-                                <img class="card-img-top"
-                                    src="img/7.jpg"
-                                    width="300" alt>
-                                <!-- descrição -->
-                                <p>Essa hospedagem conta com quartos
-                                    climatizados, restaurante
-                                    com cardápio regional e ainda
-                                    oferece
-                                    passeios de escalada e rapel.</p>
-                            </div>
-                        </div>
-                        <a href="hospedagem.html"
-                            class="btn d-flex justify-content-end">Ver
-                            mais
-                            Hospedagens </a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <div>
-                            <div class="row">
-                                <h1 class="text-center p-5">Atrações</h1>
-                                <div
-                                    class="col-lg-4 col-md-6 card">
-                                    <div class="p-2">
-                                        <!-- titulo a baixo -->
-                                        <h4 class="text-center">Centro
-                                            Histórico</h4>
-
-                                        <!-- imagem a baixo -->
-                                        <img class="card-img-top"
-                                            src="https://www.viajareumprazer.com.br/wp-content/uploads/2020/04/centro-historico-de-gravata.jpg"
-                                            width="300" alt>
-                                        <!-- descrição -->
-                                        <p>A Casa da Cultura, antiga
-                                            cadeia pública transformada em
-                                            Memorial
-                                            de Gravatá em 1985, possui um rico
-                                            acervo que registra a história da
-                                            cidade. O Museu de Gravatá apresenta
-                                            a
-                                            história local e nacional.
-                                            Valor de entrada: R$ 10,00.</p>
-                                    </div>
+                                    <!-- imagem a baixo -->
+                                    <img class="card-img-top"
+                                        src="https://www.viajareumprazer.com.br/wp-content/uploads/2020/04/centro-historico-de-gravata.jpg"
+                                        width="300" alt>
+                                    <!-- descrição -->
+                                    <p>A Casa da Cultura, antiga
+                                        cadeia pública transformada em
+                                        Memorial
+                                        de Gravatá em 1985, possui um rico
+                                        acervo que registra a história da
+                                        cidade. O Museu de Gravatá apresenta
+                                        a
+                                        história local e nacional.
+                                        Valor de entrada: R$ 10,00.</p>
                                 </div>
-                                <div
-                                    class="col-lg-4 col-md-6 card">
-                                    <div class="p-2">
-                                        <h4 class="text-center">Rapel e
-                                            Trilhas</h4>
-
-                                        <!-- imagem a baixo -->
-                                        <img class="card-img-top"
-                                            src="https://www.viajareumprazer.com.br/wp-content/uploads/2020/04/parque-Karawa-t%C3%A3-Foto-pernambucoemfoco.jpeg"
-                                            width="300" alt>
-                                        <!-- descrição -->
-                                        <p> Todos os finais de semana, se
-                                            organizam
-                                            trilhas e atividades de rapel pela
-                                            antiga via férrea e as pontes. As
-                                            atividades mais comuns são a trilha
-                                            de 6
-                                            km pelos trilhos abandonados, e o
-                                            rapel
-                                            negativo de 50m de altura,
-                                            organizados
-                                            por várias empresas
-                                            particulares.</p>
-                                    </div>
-                                </div>
-                                <div
-                                    class="col-lg-4 col-md-6 card">
-                                    <div class="p-2">
-                                        <!-- titulo a baixo -->
-                                        <h4 class="text-center">Trilha na Serra
-                                            das
-                                            Cãibras
-                                        </h4>
-
-                                        <!-- imagem a baixo -->
-                                        <img class="card-img-top"
-                                            src="data:image/jpeg;base64,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"
-                                            width="300" alt>
-                                        <!-- descrição -->
-                                        <p>Está localizada no Sítio Valentim, a
-                                            8 km
-                                            do centro da cidade. Local ideal
-                                            para
-                                            passeios de bicicleta, com um
-                                            mirante de
-                                            onde se tem a visão das cidades
-                                            circunvizinhas: Cumaru, Passira,
-                                            Limoeiro, João Alfredo, Serra
-                                            Negra.</p>
-                                    </div>
-                                </div>
-                                <a href="feriados.html"
-                                    class="btn d-flex justify-content-end">Ver
-                                    mais
-                                    Atrações</a>
                             </div>
+                            <div class="col-lg-4 col-md-6 card">
+                                <div class="p-2">
+                                    <h4 class="text-center">Rapel e
+                                        Trilhas</h4>
+
+                                    <!-- imagem a baixo -->
+                                    <img class="card-img-top"
+                                        src="https://www.viajareumprazer.com.br/wp-content/uploads/2020/04/parque-Karawa-t%C3%A3-Foto-pernambucoemfoco.jpeg"
+                                        width="300" alt>
+                                    <!-- descrição -->
+                                    <p> Todos os finais de semana, se
+                                        organizam
+                                        trilhas e atividades de rapel pela
+                                        antiga via férrea e as pontes. As
+                                        atividades mais comuns são a trilha
+                                        de 6
+                                        km pelos trilhos abandonados, e o
+                                        rapel
+                                        negativo de 50m de altura,
+                                        organizados
+                                        por várias empresas
+                                        particulares.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 card">
+                                <div class="p-2">
+                                    <!-- titulo a baixo -->
+                                    <h4 class="text-center">Trilha na Serra
+                                        das
+                                        Cãibras
+                                    </h4>
+
+                                    <!-- imagem a baixo -->
+                                    <img class="card-img-top"
+                                        src="data:image/jpeg;base64,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"
+                                        width="300" alt>
+                                    <!-- descrição -->
+                                    <p>Está localizada no Sítio Valentim, a
+                                        8 km
+                                        do centro da cidade. Local ideal
+                                        para
+                                        passeios de bicicleta, com um
+                                        mirante de
+                                        onde se tem a visão das cidades
+                                        circunvizinhas: Cumaru, Passira,
+                                        Limoeiro, João Alfredo, Serra
+                                        Negra.</p>
+                                </div>
+                            </div>
+                            <a href="tour.html" class="btn d-flex justify-content-end pb-4">Ver
+                                mais
+                                Atrações</a>
                         </div>
                     </div>
                 </div>
-                <!-- FORMULÁRIO -->
-                <div class="row text-center">
-                    <div class="col card d-flex justify-content-center">
-                        <form class="my-div form-check"
-                            onsubmit="event.preventDefault(); enviarFormulario();">
-                            <h3 class="text-center p-3">CADASTRE SEU E-MAIL PARA
-                                RECEBER
-                                DICAS DE DESTINOS!</h3>
-                            <input type="text" placeholder="Nome" size="60"
-                                required
-                                id="nome">
-                            <input type="email" placeholder="E-mail" size="60"
-                                required
-                                id="mail">
-                            <button type="submit"
-                                onsubmit="exibirAlerta()">Cadastrar</button>
-                            <h5 id="enviado" class="m-2 text-info"></h5>
-                        </form>
-                        <div class="col-1 p-2"></div>
-                    </div>
-                </div>
-            </main>
-            <!-- RODAPÉ -->
-            <footer>
-                <div class="text-center">
-                    <a href="index.html" class="text-center text-dark">Voltar ao
-                        topo </a>
-                    © 2023 Copyright:
-                    <a class="text-dark"
-                        href="https://www.camaramunicipaldegravata.pe.gov.br/historia-cidade/">Todos
-                        os direitos reservados a Mundo a Fora</a>
-                </div>
-            </footer>
-        </body>
+            </div>
+            <!-- FORMULÁRIO -->
+            <div class="container">
+                <form class="my-div form-check m-2" onsubmit="event.preventDefault(); enviarFormulario();">
+                    <h3 class="text-center p-2">CADASTRE SEU E-MAIL PARA
+                        RECEBER
+                        DICAS DE DESTINOS!</h3>
+                    <input type="text" placeholder="Nome" size="60" required id="nome" class="form-control mt-2">
+                    <input type="email" placeholder="E-mail" size="60" required id="mail" class="form-control mt-2">
+                    <button type="submit" class="btn btn-outline-dark mt-2" onsubmit="exibirAlerta()">Cadastrar</button>
+                    <h6 id="enviado" class="m-2 text-success"></h6>
+                </form>
+            </div>
+        </div>
+    </main>
+    <!-- RODAPÉ -->
+    <footer>
+        <div class="text-center">
+            <a href="index.html" class="text-center text-dark">Voltar ao
+                topo </a>
+            © 2023 Copyright:
+            <a class="text-dark" href="https://www.camaramunicipaldegravata.pe.gov.br/historia-cidade/">Todos
+                os direitos reservados a Mundo a Fora</a>
+        </div>
+    </footer>
+</body>
 
-    </html>
+</html>
